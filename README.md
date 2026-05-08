@@ -67,6 +67,7 @@ Workflow-ul este definit în [`.github/workflows/ci.yml`](.github/workflows/ci.y
    - rapoartelor Surefire (`surefire-reports`)
    - raportului HTML JaCoCo (`jacoco-coverage-report`)
 5. Job separat de mutation testing (`continue-on-error: true`) care publică `pit-mutation-report`.
+6. Job de notificare la eșec (`notify-failure`, rulează doar la `failure()`) care deschide automat un Issue în repo cu label-ul `ci-failure`, link către run-ul căzut, branch, commit și `@mention` la autorul commit-ului. GitHub trimite email și notificare în clopoțel către watcher-ii repo-ului.
 
 ### Semnificația badge-ului
 

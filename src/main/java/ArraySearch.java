@@ -10,7 +10,7 @@ public class ArraySearch {
 
         for (int i = 0; i < v.length; i++) {
             if (v[i] == key) {
-                return i;
+                return i + 1;
             }
         }
         return -1;

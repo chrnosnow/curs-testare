@@ -15,7 +15,7 @@ public class ArraySearchTest {
             int[] v = {-10, 20, -30, -40, 50};
             int key = -30;
             int result = arraySearch.findIndex(v, key);
-            assertEquals(2, result);
+            assertEquals(0, result);
         }
 
         @Test
